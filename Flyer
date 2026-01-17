@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+    /* A4 Page Setup */
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    /* The Grid Container */
+    .page-container {
+        width: 210mm;
+        height: 297mm;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 Columns */
+        grid-template-rows: 1fr 1fr;    /* 2 Rows */
+    }
+
+    /* Individual Flyer Card Styling */
+    .flyer-card {
+        border: 1px dashed #ccc; /* Cut lines guide */
+        padding: 15px; /* Inner padding */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* Typography */
+    h1 {
+        text-align: center;
+        font-size: 14pt;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+    }
+    
+    .event-list {
+        font-size: 9pt;
+        line-height: 1.4;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .event-list td {
+        padding: 2px 0;
+        vertical-align: top;
+    }
+    
+    .date {
+        font-weight: bold;
+        width: 55px; /* Fixed width for dates alignment */
+        white-space: nowrap;
+    }
+
+    /* Highlight Specific Events mentioned in your file */
+    .highlight {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="page-container">
+    <div class="flyer-card">
+        <h1>Spring Semester Events</h1>
+        <table class="event-list">
+            <tr><td class="date">Jan 23</td><td>Welcome Event @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Jan 30</td><td>Small Group Meeting</td></tr>
+            <tr><td class="date">Feb 6</td><td>Encounter Night</td></tr>
+            <tr><td class="date">Feb 14</td><td>Valentine's Day Event @ Student Union</td></tr>
+            <tr><td class="date">Feb 20</td><td>Small Group</td></tr>
+            <tr><td class="date">Feb 27</td><td>Night Vigil</td></tr>
+            <tr><td class="date">Mar 6</td><td>Spring Retreat</td></tr>
+            <tr><td class="date">Mar 13</td><td>Spring Recess</td></tr>
+            <tr><td class="date">Mar 20</td><td>Fellowship Night @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Mar 27</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 3</td><td class="highlight">Good Friday</td></tr>
+            <tr><td class="date">Apr 10</td><td>Game Night</td></tr>
+            <tr><td class="date">Apr 17</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 24</td><td>Encounter Night</td></tr>
+            <tr><td class="date">May 1</td><td>Small Group</td></tr>
+            <tr><td class="date">May 8</td><td class="highlight">Graduation Ceremony</td></tr>
+        </table>
+    </div>
+
+    <div class="flyer-card">
+        <h1>Spring Semester Events</h1>
+        <table class="event-list">
+            <tr><td class="date">Jan 23</td><td>Welcome Event @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Jan 30</td><td>Small Group Meeting</td></tr>
+            <tr><td class="date">Feb 6</td><td>Encounter Night</td></tr>
+            <tr><td class="date">Feb 14</td><td>Valentine's Day Event @ Student Union</td></tr>
+            <tr><td class="date">Feb 20</td><td>Small Group</td></tr>
+            <tr><td class="date">Feb 27</td><td>Night Vigil</td></tr>
+            <tr><td class="date">Mar 6</td><td>Spring Retreat</td></tr>
+            <tr><td class="date">Mar 13</td><td>Spring Recess</td></tr>
+            <tr><td class="date">Mar 20</td><td>Fellowship Night @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Mar 27</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 3</td><td class="highlight">Good Friday</td></tr>
+            <tr><td class="date">Apr 10</td><td>Game Night</td></tr>
+            <tr><td class="date">Apr 17</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 24</td><td>Encounter Night</td></tr>
+            <tr><td class="date">May 1</td><td>Small Group</td></tr>
+            <tr><td class="date">May 8</td><td class="highlight">Graduation Ceremony</td></tr>
+        </table>
+    </div>
+
+    <div class="flyer-card">
+        <h1>Spring Semester Events</h1>
+        <table class="event-list">
+            <tr><td class="date">Jan 23</td><td>Welcome Event @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Jan 30</td><td>Small Group Meeting</td></tr>
+            <tr><td class="date">Feb 6</td><td>Encounter Night</td></tr>
+            <tr><td class="date">Feb 14</td><td>Valentine's Day Event @ Student Union</td></tr>
+            <tr><td class="date">Feb 20</td><td>Small Group</td></tr>
+            <tr><td class="date">Feb 27</td><td>Night Vigil</td></tr>
+            <tr><td class="date">Mar 6</td><td>Spring Retreat</td></tr>
+            <tr><td class="date">Mar 13</td><td>Spring Recess</td></tr>
+            <tr><td class="date">Mar 20</td><td>Fellowship Night @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Mar 27</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 3</td><td class="highlight">Good Friday</td></tr>
+            <tr><td class="date">Apr 10</td><td>Game Night</td></tr>
+            <tr><td class="date">Apr 17</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 24</td><td>Encounter Night</td></tr>
+            <tr><td class="date">May 1</td><td>Small Group</td></tr>
+            <tr><td class="date">May 8</td><td class="highlight">Graduation Ceremony</td></tr>
+        </table>
+    </div>
+
+    <div class="flyer-card">
+        <h1>Spring Semester Events</h1>
+        <table class="event-list">
+            <tr><td class="date">Jan 23</td><td>Welcome Event @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Jan 30</td><td>Small Group Meeting</td></tr>
+            <tr><td class="date">Feb 6</td><td>Encounter Night</td></tr>
+            <tr><td class="date">Feb 14</td><td>Valentine's Day Event @ Student Union</td></tr>
+            <tr><td class="date">Feb 20</td><td>Small Group</td></tr>
+            <tr><td class="date">Feb 27</td><td>Night Vigil</td></tr>
+            <tr><td class="date">Mar 6</td><td>Spring Retreat</td></tr>
+            <tr><td class="date">Mar 13</td><td>Spring Recess</td></tr>
+            <tr><td class="date">Mar 20</td><td>Fellowship Night @ Lincoln Res. Hall</td></tr>
+            <tr><td class="date">Mar 27</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 3</td><td class="highlight">Good Friday</td></tr>
+            <tr><td class="date">Apr 10</td><td>Game Night</td></tr>
+            <tr><td class="date">Apr 17</td><td>Small Group</td></tr>
+            <tr><td class="date">Apr 24</td><td>Encounter Night</td></tr>
+            <tr><td class="date">May 1</td><td>Small Group</td></tr>
+            <tr><td class="date">May 8</td><td class="highlight">Graduation Ceremony</td></tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
